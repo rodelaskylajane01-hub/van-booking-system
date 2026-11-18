@@ -1,0 +1,3 @@
+<aside class="sidebar"><a class="side-brand" href="/"><span>🚐</span><b>VanBooking</b></a><nav><% if(currentUser && currentUser.role==="admin"){ %>
+<a href="/admin">▦　Dashboard</a><a href="/admin/routes">⌁　Van Routes</a><a href="/admin/vans">▰　Van Records</a><a href="/admin/drivers">♙　Drivers</a><a href="/admin/schedules">▣　Schedules</a><a href="/admin/bookings">▤　Bookings</a><a href="/admin/passengers">♟　Passengers</a><a href="/admin/reports">▥　Reports</a><a href="/admin/records">▦　Database Records</a>
+<% } else { %><a href="/trips">⌕　Search Trips</a><a href="/bookings">▤　My Bookings</a><a href="/profile">♙　Profile</a><% } %></nav></aside>
